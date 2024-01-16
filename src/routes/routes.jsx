@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import Dashboard from "../pages/Dashboard/Dashboard"
+import Prueba from "../pages/Prueba/Prueba"
 
 const ToDolist = () => {
     return(
@@ -8,6 +9,7 @@ const ToDolist = () => {
         
             <Routes>
                 <Route path="/" element={ < Dashboard/> }></Route>
+                <Route path="/prueba" element={ < Prueba/> }></Route>
             </Routes>
         
     

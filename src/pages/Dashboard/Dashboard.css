@@ -1,5 +1,120 @@
-.dashboard {
-  
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.dashboard{
+    background-color: white;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-image: url("/src/assets/img/fondo.jpg"); 
+    background-size: cover;
+    background-position: center; 
+}
+
+
+.columna{
+    
+    border-radius: 15px;
+    margin: 20px;
+    
+}
+
+.columnados {
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    margin: 20px;
+    border-radius: 15px;
+    border: 1px solid white;
+    background: rgba(3, 6, 3, 0.813);
+   
+}
+
+.msg{
+    margin: 20px;
+   
+
+}
+
+.columnados > h2{
+
+    border: 1px;
+    margin: 20px;
+
+}
+
+.cardContent{
+    
+    margin-top: 280px;
+    align-items: center;
+    gap: 10px;
+    height: 100px;
+    width: 170px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border: 1px solid ;
+    border-radius: 10px;
+    margin-left: 15px;
+}
+
+.fas{
+    margin: 5px;
+}
+
+.buscador{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid;
+    height: 40px;
+    margin: 15px;
+    border-radius: 20px;
+    margin-top: auto;
 
 
 }
+
+.contenido{
+    margin: 10px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+.contenido > input {
+    margin-left: 10px;
+    width: 70%;
+    border: none;
+    background: none; 
+    outline: none; 
+    padding: 0; 
+  }
+
+.contenido  > button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    height: 25px;
+    width: 60px;
+    background-color: #0ABF49;
+    border-radius: 25px;
+    margin-left: auto; 
+    
+}
+
+
+
+
+
+/* .buscador > button{
+   
+    
+} */
+

@@ -1,0 +1,40 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+.header {
+
+    margin: 20px;
+    border-radius: 15px;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+}
+
+.header > h3{
+    width: 100%;
+    top: 0;
+}
+
+.card{
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    height: 150px;
+    width: 250px;
+    
+    align-items: end;
+}
+
+.card h1{
+
+    font-size: 80px;
+
+}
+
