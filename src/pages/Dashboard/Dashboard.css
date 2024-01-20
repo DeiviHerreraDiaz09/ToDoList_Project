@@ -68,23 +68,26 @@
 
 .buscador{
     display: flex;
-    flex-direction: row;
-    border: 1px solid;
-    height: 40px;
-    margin: 15px;
-    border-radius: 20px;
-    margin-top: auto;
-
-
+    flex-direction: column;
+    height: 70%;
+    margin: 20px;
+    margin-bottom: auto;
+    margin-bottom: 5px;
+    
+    width: 95%;
 }
 
 .contenido{
-    margin: 10px;
+ 
+    border: 1px solid;
+    border-radius: 25px;
     display: flex;
     width: 100%;
-    justify-content: center;
+    height: 40px;
     align-items: center;
-  
+    justify-content: space-between;
+    margin-top: auto;
+
 }
 
 .contenido > input {
@@ -102,11 +105,11 @@
     align-items: center;
     font-size: 10px;
     height: 25px;
-    width: 60px;
+    width: 80px;
     background-color: #0ABF49;
     border-radius: 25px;
-    margin-left: auto; 
-    
+    margin-right: 10px;
+   
 }
 
 
