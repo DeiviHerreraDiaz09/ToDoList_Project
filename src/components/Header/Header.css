@@ -1,40 +1,43 @@
-*{
-
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
-
 .header {
-
-    margin: 20px;
+    height: 100%;
+    width: 100%;
+    margin-left: 20px;
     border-radius: 15px;
     color: white;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
     gap: 80px;
 }
 
-.header > h3{
-    width: 100%;
-    top: 0;
-}
-
-.card{
+.card {
     flex-wrap: wrap;
     display: flex;
     flex-direction: row;
     height: 150px;
     width: 250px;
-    
     align-items: end;
+    width: 100%;
 }
 
-.card h1{
-
-    font-size: 80px;
-
+.card>h5,
+h3 {
+    font-size: 1.5rem;
 }
 
+.hours {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.hours h1 {
+    font-size: 6.5rem;
+}

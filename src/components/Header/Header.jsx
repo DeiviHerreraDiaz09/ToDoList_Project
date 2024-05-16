@@ -1,26 +1,41 @@
-import './Header.css';
-
+import { useEffect } from "react";
+import "./Header.css";
+import { useState } from "react";
 
 const Header = () => {
-	return (
-		<div className='header'>
-				
-			<h3>TodoApp</h3>
+  const [currentTime, setCurrentTime] = useState(new Date());
 
-			<div className="card">
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setCurrentTime(new Date());
+    }, 1000);
 
-				<h1>12:22</h1>
-				<h6>p.m</h6>
-				<h5>Domingo, 14 De Enero</h5>
+    return () => clearInterval(intervalId);
+  }, []);
 
+  const formattedTime = currentTime.toLocaleTimeString([], {
+    hour: "numeric",
+    minute: "2-digit",
+    hour12: true,
+  });
 
+  const formattedDate = currentTime.toLocaleDateString("es-ES", {
+    weekday: "long",
+    day: "numeric",
+    month: "long",
+  });
 
-			</div>
-
-
-		</div>
-	);
+  return (
+    <div className="header">
+      <div className="card">
+        <h3>TodoApp</h3>
+        <div className="hours">
+          <h1>{formattedTime}</h1>
+        </div>
+        <h5>{formattedDate}</h5>
+      </div>
+    </div>
+  );
 };
-
 
 export default Header;

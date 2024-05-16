@@ -1,123 +1,115 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-.dashboard{
+.dashboard {
     background-color: white;
     height: 100vh;
     width: 100vw;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-image: url("/src/assets/img/fondo.jpg"); 
+    background-image: url("/src/assets/img/fondo.jpg");
     background-size: cover;
-    background-position: center; 
+    background-position: center;
+    border: 1px solid white;
 }
 
-
-.columna{
-    
+.columna {
     border-radius: 15px;
     margin: 20px;
-    
 }
 
 .columnados {
-    display: flex;
-    flex-direction: column;
-    border-radius: 15px;
-    margin: 20px;
     border-radius: 15px;
     border: 1px solid white;
+    margin: 20px;
     background: rgba(3, 6, 3, 0.813);
-   
-}
-
-.msg{
-    margin: 20px;
-   
-
-}
-
-.columnados > h2{
-
-    border: 1px;
-    margin: 20px;
-
-}
-
-.cardContent{
-    
-    margin-top: 280px;
-    align-items: center;
-    gap: 10px;
-    height: 100px;
-    width: 170px;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
-    border: 1px solid ;
-    border-radius: 10px;
-    margin-left: 15px;
+    flex-wrap: wrap;
+    height: 95%;
+
 }
 
-.fas{
-    margin: 5px;
-}
-
-.buscador{
+.encabezado {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    height: 70%;
-    margin: 20px;
-    margin-bottom: auto;
-    margin-bottom: 5px;
-    
-    width: 95%;
+    padding: 3%;
+    height: 15%;
+    margin: 3px;
 }
 
-.contenido{
- 
-    border: 1px solid;
-    border-radius: 25px;
-    display: flex;
+
+.notes {
+
+    margin: 10px;
     width: 100%;
-    height: 40px;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: auto;
+    height: 40rem;
+    max-height: 70%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.tarea {
+    width: 100%;
+    margin-left: 10px;
 
 }
 
-.contenido > input {
-    margin-left: 10px;
-    width: 70%;
-    border: none;
-    background: none; 
-    outline: none; 
-    padding: 0; 
-  }
+/* NOT FOUND NOTES */
 
-.contenido  > button{
+.notFoundTask {
+    width: 100%;
     display: flex;
     justify-content: center;
+    text-align: center;
+}
+
+.buscador {
+    height: 10%;
+    width: 98%;
+    margin: 10px;
+    margin-bottom: 20px;
+    display: flex;
     align-items: center;
-    font-size: 10px;
-    height: 25px;
-    width: 80px;
-    background-color: #0ABF49;
-    border-radius: 25px;
-    margin-right: 10px;
-   
+    margin-bottom: 30px;
 }
 
 
+.buscador>input {
+    height: 2rem;
+    margin-left: 10px;
+    border-radius: 15px;
+    width: 85%;
+    padding: 2%;
+}
 
+.buscador>input::placeholder {
+    color: white;
+}
 
+.buscador>button {
+    display: flex;
+    align-items: center;
+    height: 2rem;
+    margin: 15px;
+    border-radius: 20px;
+}
 
-/* .buscador > button{
-   
-    
-} */
+/* SCREENS */
 
+@media (max-height: 740px) {
+
+    .notes {
+        margin: 10px;
+        width: 100%;
+        height: 23rem;
+        max-height: 70%;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+}
