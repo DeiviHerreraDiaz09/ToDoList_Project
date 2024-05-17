@@ -21,11 +21,11 @@ Antes de comenzar, asegúrate de tener instalado lo siguiente:
 **Instalación**
 1. Clona este repositorio en tu máquina local.
 ```
-git clone https://github.com/tu-usuario/tu-repositorio.git
+git clone https://github.com/DeiviHerreraDiaz09/ToDoList_Project.git
 ```
 2. Navega al directorio del proyecto.
 ```
-cd tu-repositorio
+cd ToDoList_Project
 ```
 3. Instala las dependencias del proyecto.
 ```
