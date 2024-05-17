@@ -1,6 +1,6 @@
 # Proyecto: To-Do List
 ## **Descripción**
-Una aplicación de lista de tareas (to-do list) simple hecha con React. Permite a los usuarios agregar, eliminar y marcar tareas como completadas. Este proyecto sirve como un ejemplo básico de una aplicación React.
+Una aplicación de lista de tareas (to-do list) simple hecha con React. Permite al usuario agregar tareas. Este proyecto sirve como un ejemplo básico de una aplicación React.
 
 **Características**
 - Agregar nuevas tareas.
